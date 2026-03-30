@@ -65,11 +65,11 @@ export function startHTML6() {
       srv.getAttribute("mltplyr")
     )
     
-    srv.querySelectorAll("onrq").forEach(onrq => {
-      errors.push(...validateAttributes(onrq))
+    srv.querySelectorAll("nrq").forEach(nrq => {
+      errors.push(...validateAttributes(nrq))
       server.addHandler(
-        onrq.getAttribute("pth"),
-        onrq.textContent.trim()
+        nrq.getAttribute("pth"),
+        nrq.textContent.trim()
       )
     })
     
